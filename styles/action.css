@@ -1,0 +1,188 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+
+.container{
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  4.7em 1.5fr 1.2fr 1.0fr 2.5em;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main content1"
+    "sidebar main main content1 "
+    "sidebar main main content1 "
+    "footer footer footer footer";
+    grid-gap: 0.1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color:black;
+    text-align:center;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 98.8%;
+    height:9.5%;
+    background-color: gold;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding);
+}
+
+#myTopnav{
+  position: relative;
+  top: -10px;
+}
+
+.nav-image{
+    position:relative;
+    top: -9px;
+    background-color: gold;
+    width: 70%;
+    max-width: 70px;
+    height: auto;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding)
+}  
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+    
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: goldenrod;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: goldenrod;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+main{
+    background-color:gold;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding)
+}
+
+.js{
+  width: 30%;
+  height:auto;
+}
+
+.dec{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.paio{
+  width:70%;
+  height:auto;
+}
+
+.port{
+  width:77%;
+  height:auto;
+}
+
+.tree{
+  width:77%;
+  height:auto;
+}
+
+.by{
+  width:60%;
+  height:auto;
+}
+
+.ronnie{
+  width:55%;
+  height:auto;
+}
+
+.ronnie-2{
+  width:60%;
+  height:auto;
+}
+
+.sidebar{
+    background-color:gold;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding)
+}
+
+.content1{
+    background-color: gold;
+    grid-area:content1;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding)
+}
+
+
+
+footer{
+    background-color: black;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding)
+}
+
+.foot{
+  color: white;
+}
+
+.link{
+  color: white;
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "footer"
+        ;
+    }
+}

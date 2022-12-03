@@ -1,0 +1,363 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #080705;
+  --secondary-color:#FFD700;
+  --accent1-color: #DAA520;
+  --accent2-color: #FFFFFF;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Roboto;
+  --paragraph-font: Luxurious Roman;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: black; /* headlines on a colored background */ 
+  --paragraph-color-on-white: ; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #ffdd00;
+  --nav-link-color: black;
+  --nav-background-color: #FFD700;
+  --nav-hover-link-color: #DAA520;
+  --nav-hover-background-color: #DAA520;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+#links{
+  position: fixed;
+  left:46.3%;
+  top:3%;
+
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto;
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: luxurious Roman;
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.home-page{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.jc {
+  width: 70%;
+  height: auto;
+}
+
+.sepulcro{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.paiemae{
+  position: relative;
+  width: 70%;
+  height: auto;
+}
+
+.paio{
+  position: relative;
+  top: 30px;
+  width: 70%;
+  height: auto;
+}
+
+.joseph{
+  width: 50%;
+  height: auto;
+
+}
+
+.joseph2{ 
+  width: 70%;
+  height: auto;
+}
+
+.brigham{
+  position: relative;
+  top: 50px;
+  width: 70%;
+  height: auto;
+}
+
+.brighamlarge{
+  width: 70%;
+  height: auto;
+}
+
+.david{
+  width: 70%;
+  height: auto;
+}
+
+.page2{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.cbumvsramon{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.theman{
+  position: relative;
+  width: 90%;
+  height: auto;
+}
+
+.cbum{
+  position: relative;
+  width: 70%;
+  height: auto;
+}
+
+.marcus{  
+  position: relative;
+  width: 90%;
+  height: auto;
+}
+
+.giga{
+  position: relative;
+  top: 50px;
+  width: 90%;
+  height: auto;
+}
+
+.seneca{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.senecapic{
+  position: relative;
+  top: 70px;
+  width: 70%;
+  height: auto;
+}
+
+.jay{
+  position: relative;
+  top: 70px;
+  width: 100%;
+  height: auto;
+}
+
+.jorlan{
+  position: relative;
+  width: 60%;
+  height: auto;
+}
+
+.jorlan2{
+  position: relative;
+  top: 100px;
+  width: 70%;
+  height: auto;
+}
+
+.jorlan3{
+  position: relative;
+  top: 30px;
+  width: 60%;
+  height: auto;
+}
+
+.page3{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.thefour {
+  width: 70%;
+  height: auto;
+}
+
+.ronnieback{
+  width: 50%;
+  height: auto;
+}
+
+.larry{
+  width: 90%;
+  height: auto;
+}
+
+.larry2{
+  position: relative;
+  top: auto;
+  width: 50%;
+  height: auto;
+}
+
+.larry3{
+  position: relative;
+  top: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.ronnietheking{
+  width: 90%;
+  height: auto;
+}
+
+.ronnieback2{
+  width: 70%;
+  height: auto;
+
+}
+
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
